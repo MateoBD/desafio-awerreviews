@@ -27,6 +27,22 @@
           <artifactId>spring-webmvc</artifactId>
       </dependency>
       <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-orm</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-tx</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.hibernate</groupId>
+          <artifactId>hibernate-core</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>com.mysql</groupId>
+          <artifactId>mysql-connector-j</artifactId>
+      </dependency>
+      <dependency>
           <groupId>javax.servlet</groupId>
           <artifactId>servlet-api</artifactId>
       </dependency>
@@ -39,12 +55,11 @@
           <artifactId>interfaces</artifactId>
           <version>${parent.version}</version>
       </dependency>
-        <dependency>
-            <groupId>com.awerreviews.desafio</groupId>
-            <artifactId>service</artifactId>
-            <version>${parent.version}</version>
-            <scope>runtime</scope>
-        </dependency>
+      <dependency>
+          <groupId>com.awerreviews.desafio</groupId>
+          <artifactId>persistence</artifactId>
+          <version>${parent.version}</version>
+      </dependency>
   </dependencies>
 
   <build>

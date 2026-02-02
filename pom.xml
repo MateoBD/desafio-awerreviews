@@ -23,6 +23,7 @@
       <org.hibernate.validator>6.2.4.Final</org.hibernate.validator>
       <org.hibernate.version>5.6.15.Final</org.hibernate.version>
       <org.hibernate.jpa.version>1.0.0.Final</org.hibernate.jpa.version>
+      <mysql.version>8.0.33</mysql.version>
       <jersey.version>2.43</jersey.version>
       <spring.data.version>2.7.6</spring.data.version>
   </properties>
@@ -71,6 +72,11 @@
             <version>${org.springframework.version}</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
 
         <!--    HIBERNATE & JPA      -->
         <dependency>
@@ -115,6 +121,12 @@
                     <artifactId>validation-api</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>${mysql.version}</version>
         </dependency>
 
         <!-- JERSEY JSON -->
