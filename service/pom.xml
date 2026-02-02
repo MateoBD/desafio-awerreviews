@@ -19,18 +19,20 @@
     <maven.compiler.release>17</maven.compiler.release>
   </properties>
 
-  <dependencyManagement>
-    <dependencies>
-
-    </dependencies>
-  </dependencyManagement>
-
   <dependencies>
         <dependency>
             <groupId>com.awerreviews.desafio</groupId>
             <artifactId>interfaces</artifactId>
             <version>${parent.version}</version>
         </dependency>
+      <dependency>
+          <groupId>org.springframework.data</groupId>
+          <artifactId>spring-data-commons</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-context</artifactId>
+      </dependency>
   </dependencies>
 
   <build>

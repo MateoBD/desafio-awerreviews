@@ -20,7 +20,28 @@
   </properties>
 
   <dependencies>
-
+      <dependency>
+          <groupId>com.awerreviews.desafio</groupId>
+          <artifactId>interfaces</artifactId>
+          <version>${parent.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-context</artifactId>
+      </dependency>
+      <!-- HIBERNATE & JPA -->
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-orm</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.hibernate</groupId>
+          <artifactId>hibernate-core</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.hibernate</groupId>
+          <artifactId>hibernate-entitymanager</artifactId>
+      </dependency>
   </dependencies>
 
   <build>
