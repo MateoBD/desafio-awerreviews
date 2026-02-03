@@ -2,4 +2,5 @@
 .idea/
 *.mvn/
 *.properties
-*/target/
+**/target/
+
