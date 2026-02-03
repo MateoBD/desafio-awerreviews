@@ -51,6 +51,10 @@
           <artifactId>jstl</artifactId>
       </dependency>
       <dependency>
+          <groupId>javax.validation</groupId>
+          <artifactId>validation-api</artifactId>
+      </dependency>
+      <dependency>
           <groupId>com.awerreviews.desafio</groupId>
           <artifactId>interfaces</artifactId>
           <version>${parent.version}</version>
@@ -59,6 +63,48 @@
           <groupId>com.awerreviews.desafio</groupId>
           <artifactId>persistence</artifactId>
           <version>${parent.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>com.awerreviews.desafio</groupId>
+          <artifactId>service</artifactId>
+          <version>${parent.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>jcl-over-slf4j</artifactId>
+      </dependency>
+      <!-- JERSEY -->
+      <dependency>
+          <groupId>org.glassfish.jersey.containers</groupId>
+          <artifactId>jersey-container-servlet-core</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.glassfish.jersey.ext</groupId>
+          <artifactId>jersey-spring5</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.glassfish.jersey.core</groupId>
+          <artifactId>jersey-server</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.glassfish.jersey.media</groupId>
+          <artifactId>jersey-media-moxy</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.glassfish.jersey.media</groupId>
+          <artifactId>jersey-media-jaxb</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.glassfish.jersey.media</groupId>
+          <artifactId>jersey-media-json-jackson</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
       </dependency>
   </dependencies>
 
