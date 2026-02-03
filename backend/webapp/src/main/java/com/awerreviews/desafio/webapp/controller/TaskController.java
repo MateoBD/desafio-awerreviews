@@ -47,11 +47,13 @@ public class TaskController {
 
         StringBuilder link = new StringBuilder();
 
+        // Link para primeira pagina
         link.append("<").append(uriInfo.getRequestUriBuilder()
                 .replaceQueryParam("pageNumber", 1)
                 .replaceQueryParam("pageSize", pageSize)
                 .build()).append(">; rel=\"first\"");
 
+        // Link para pagina anterior
         if (pageNumber > 1) {
             link.append(", <").append(uriInfo.getRequestUriBuilder()
                     .replaceQueryParam("pageNumber", pageNumber - 1)
@@ -59,6 +61,7 @@ public class TaskController {
                     .build()).append(">; rel=\"prev\"");
         }
 
+        // Link para proxima pagina
         if (tasksPage.hasNext()) {
             link.append(", <").append(uriInfo.getRequestUriBuilder()
                     .replaceQueryParam("pageNumber", pageNumber + 1)
@@ -66,8 +69,8 @@ public class TaskController {
                     .build()).append(">; rel=\"next\"");
         }
 
-        // getTotalPages() devuelve el número correcto de páginas
-        // Como usamos indexación base-1 para el usuario, este valor ya es correcto
+        // Link para ultima pagina
+        // Usamos indexado de 1
         int lastPageNumber = Math.max(1, tasksPage.getTotalPages());
         link.append(", <").append(uriInfo.getRequestUriBuilder()
                 .replaceQueryParam("pageNumber", lastPageNumber)
